@@ -19,6 +19,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">My NFT Marketplace</h1>
+            <div className="text-sm font-medium text-gray-500 dark:text-gray-400 ml-4">
+              92113504 김동현
+            </div>
             <WalletConnect />
           </div>
         </div>
@@ -30,41 +33,37 @@ export default function Home() {
           <div className="flex space-x-8">
             <button
               onClick={() => setActiveTab('marketplace')}
-              className={`py-4 px-1 border-b-2 font-bold text-base ${
-                activeTab === 'marketplace'
+              className={`py-4 px-1 border-b-2 font-bold text-base ${activeTab === 'marketplace'
                   ? 'border-blue-500 text-blue-600 dark:text-blue-400'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
+                }`}
             >
               마켓플레이스
             </button>
             <button
               onClick={() => setActiveTab('mynft')}
-              className={`py-4 px-1 border-b-2 font-bold text-base ${
-                activeTab === 'mynft'
+              className={`py-4 px-1 border-b-2 font-bold text-base ${activeTab === 'mynft'
                   ? 'border-blue-500 text-blue-600 dark:text-blue-400'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
+                }`}
             >
               내 NFT
             </button>
             <button
               onClick={() => setActiveTab('profile')}
-              className={`py-4 px-1 border-b-2 font-bold text-base ${
-                activeTab === 'profile'
+              className={`py-4 px-1 border-b-2 font-bold text-base ${activeTab === 'profile'
                   ? 'border-blue-500 text-blue-600 dark:text-blue-400'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
+                }`}
             >
               내 프로필
             </button>
             <button
               onClick={() => setActiveTab('contracts')}
-              className={`py-4 px-1 border-b-2 font-bold text-base ${
-                activeTab === 'contracts'
+              className={`py-4 px-1 border-b-2 font-bold text-base ${activeTab === 'contracts'
                   ? 'border-blue-500 text-blue-600 dark:text-blue-400'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
+                }`}
             >
               컨트랙트 정보
             </button>
